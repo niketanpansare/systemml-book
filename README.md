@@ -6,11 +6,13 @@ Chapter 1. [Introduction](http://nbviewer.jupyter.org/github/niketanpansare/syst
 
 ## Run the notebooks locally
 
-1. Download Anaconda and Spark 
+1. Download [Anaconda Python](https://www.continuum.io/downloads) and [Apache Spark](http://spark.apache.org/downloads.html)
 
 2. Set SPARK_HOME environment variable
 
-3. Add following to ~/.ipython/profile_default/startup/00-default-setup.py
+3. Install [Apache SystemML](https://apache.github.io/incubator-systemml/beginners-guide-python#install-systemml)
+
+4. Add following to ~/.ipython/profile_default/startup/00-default-setup.py
 
   ```python
   import os
@@ -21,7 +23,7 @@ Chapter 1. [Introduction](http://nbviewer.jupyter.org/github/niketanpansare/syst
   execfile(os.path.join(spark_home, 'python', 'pyspark', 'shell.py'))
   ```
 
-4. Download and start viewing the book
+5. Download and start viewing the book
 
   ```bash
   git clone https://github.com/niketanpansare/systemml-book.git
