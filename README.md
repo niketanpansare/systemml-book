@@ -15,7 +15,7 @@ Chapter 1. [Introduction](http://nbviewer.jupyter.org/github/niketanpansare/syst
   ```python
   import os
   import sys
-  spark_home = 'C:\\Users\\npansar\\Documents\\Projects\\spark-1.6.1-bin-hadoop2.6'
+  spark_home = os.environ['SPARK_HOME']
   sys.path.insert(0, os.path.join(spark_home, 'python'))
   sys.path.insert(0, os.path.join(spark_home, 'python', 'lib', 'py4j-0.9-src.zip'))
   execfile(os.path.join(spark_home, 'python', 'pyspark', 'shell.py'))
