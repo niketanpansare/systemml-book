@@ -2,7 +2,7 @@
 
 ## Table of Content
 
-Chapter 1. [Introduction](http://nbviewer.jupyter.org/github/niketanpansare/systemml-book/blob/master/Chapter1_Introduction.ipynb)
+Chapter 1. [Introduction](http://nbviewer.jupyter.org/github/niketanpansare/systemml-book/blob/master/Chapter1_Introduction.ipynb) - [github link](https://github.com/niketanpansare/systemml-book/blob/master/Chapter1_Introduction.ipynb)
 
 ## Run the notebooks locally
 
