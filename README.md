@@ -4,6 +4,9 @@
 
 Chapter 1. Introduction [[nbviewer](http://nbviewer.jupyter.org/github/niketanpansare/systemml-book/blob/master/Chapter1_Introduction.ipynb)] [[ipynb](https://github.com/niketanpansare/systemml-book/blob/master/Chapter1_Introduction.ipynb)]
 
+Chapter 2: Preliminaries [[nbviewer](http://nbviewer.jupyter.org/github/niketanpansare/systemml-book/blob/master/Chapter2_Preliminaries.ipynb)] [[ipynb](https://github.com/niketanpansare/systemml-book/blob/master/Chapter2_Preliminaries.ipynb)]
+
+
 ## Run the notebooks locally
 
 1. Download [Anaconda Python](https://www.continuum.io/downloads) and [Apache Spark](http://spark.apache.org/downloads.html)
