@@ -28,9 +28,11 @@ Chapter 2: Preliminaries [[nbviewer](http://nbviewer.jupyter.org/github/niketanp
 
 5. Download and start viewing the book
 
+	```
 	git clone https://github.com/niketanpansare/systemml-book.git
 	cd systemml-book
 	jupyter notebook
+	```
 
 ## Detailed instructions for running the notebooks locally on MacOS/Linux
 
