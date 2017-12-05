@@ -36,7 +36,7 @@ Chapter 2: Preliminaries [[nbviewer](http://nbviewer.jupyter.org/github/niketanp
 
 ## (Advanced) Detailed instructions for running the notebooks locally
 
-### On MacOS/Linux
+### On MacOS/Linux (recommended way)
 
 1. Install Java: The Java version should be > 1.8.
 
@@ -144,4 +144,45 @@ Finally, check if Spark is correctly installed:
 	set PYSPARK_DRIVER_PYTHON=jupyter
 	set PYSPARK_DRIVER_PYTHON_OPTS=notebook
 	%SPARK_HOME%\bin\pyspark --master local[*] --driver-memory 8G
+	```
+
+### On MacOS (alternate way using homebrew)
+
+1. Install Java using homebrew: The Java version should be > 1.8.
+
+	```
+	brew update 
+	brew cask install java
+	java -version
+	```
+
+2. Install using homebrew:
+
+	```
+	brew install apache-spark
+	```
+
+	
+3. Install Python and Jupyter using homebrew:
+
+	```
+	brew install python
+	pip install --user jupyter
+	export PATH=$PATH:/Users/<user-name>/Library/Python/2.7/bin
+	export PYSPARK_DRIVER_PYTHON=jupyter
+	export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
+	```
+	
+4. Install Apache SystemML
+
+	```
+	pip install systemml
+	```
+	
+5. Download and start viewing the book
+
+	```
+	git clone https://github.com/niketanpansare/systemml-book.git
+	cd systemml-book
+	$SPARK_HOME/bin/pyspark --master local[*] --driver-memory 8G
 	```
