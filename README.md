@@ -38,27 +38,17 @@ Chapter 2: Preliminaries [[nbviewer](http://nbviewer.jupyter.org/github/niketanp
 
 ### On MacOS/Linux (recommended way)
 
-1. Install Java: The Java version should be > 1.8.
+1. Install Java and set JAVA_HOME environment variable: The Java version should be > 1.8.
 
 	```
 	java -version
-	```
-
-Set JAVA_HOME environment variable, 
-
-	```
 	export JAVA_HOME="$(/usr/libexec/java_home)"
 	```
 
-2. Download Spark from https://spark.apache.org/downloads.html and move to home directory, and extract.
+2. Download Spark from https://spark.apache.org/downloads.html and move to home directory, and extract and set environment variables to point to the extracted directory,
 
 	```
 	tar -xzf spark-2.1.0-bin-hadoop2.7.tgz
-	```
-	
-and set environment variables to point to the extracted directory,
-
-	```
 	export SPARK_HOME="$HOME/spark-2.1.0-bin-hadoop2.7"
 	export HADOOP_HOME=$SPARK_HOME
 	export SPARK_LOCAL_IP=127.0.0.1
@@ -88,15 +78,10 @@ and set environment variables to point to the extracted directory,
 	
 ### On Windows
 
-1. Install Java: The Java version should be > 1.8.
+1. Install Java: The Java version should be > 1.8. Set JAVA_HOME environment variable and include %JAVA_HOME%\bin in the environment variable PATH.
 
 	```
 	java -version
-	```
-	
-Set JAVA_HOME environment variable and include %JAVA_HOME%\bin in the environment variable PATH
-
-	```
 	ls "%JAVA_HOME%"
 	```
 	
@@ -114,15 +99,10 @@ Next step, install winutils:
 - Place it in c:\winutils\bin
 - Set environment variable HADOOP_HOME to point to c:\winutils
 - Add c:\winutils\bin to the environment variable PATH.
-- Finally, modify permission of hive directory that will be used by spark
+- Finally, modify permission of hive directory that will be used by spark and check if Spark is correctly installed:
 
 	```
 	winutils.exe chmod 777 /tmp/hive
-	```
-	
-Finally, check if Spark is correctly installed:
-
-	```
 	%SPARK_HOME%\bin\spark-shell
 	%SPARK_HOME%\bin\pyspark	
 	```
